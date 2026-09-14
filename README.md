@@ -1,6 +1,6 @@
 # Automação de API GraphQL com PactumJS
 
-Este repositório contém testes automatizados para APIs (incluindo GraphQL) utilizando PactumJS e Mocha.
+Este repositório contém testes automatizados para APIs (incluindo GraphQL) utilizando PactumJS e Mocha. Adcionado GitHub Actions.
 
 ## Descrição
 
