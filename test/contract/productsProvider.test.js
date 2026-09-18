@@ -8,7 +8,7 @@ const flowVersion =
   `1.0.${Date.now()}-${Math.random().toString(16).slice(2)}`;
 
 function addFlowReporter() {
-  pf.config.url = "http://localhost:8080";
+  pf.config.url = process.env.PACTUM_FLOW_URL || "http://localhost:8080";
   pf.config.projectId = "lojaebac_api_products";
   pf.config.projectName = "Loja Ebac Api - Products";
   pf.config.version = flowVersion;

@@ -8,3 +8,10 @@ services:
       - "DB_HOST=mongo"
   mongo:
     image: "mongo:4.2.12"
+  tests:
+    image: "andreamerico/pactumjs-tests:latest"
+    environment:
+      - "PACTUM_FLOW_URL=http://flows:8080"
+    depends_on:
+      - flows
+      - mongo
